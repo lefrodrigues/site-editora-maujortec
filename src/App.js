@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React, { Component } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Topo from "./components/Topo";
 import Home from "./components/Home";
 import Frontend from "./components/Frontend";
@@ -33,7 +33,7 @@ class App extends Component {
     return (
       <Router>
         <Topo />
-        <Switch>
+        <Routes>
           <Route
             exact
             path="/"
@@ -70,7 +70,7 @@ class App extends Component {
             }}
           />
           <Route component={NotFound} />
-        </Switch>
+        </Routes>
         <Rodape />
       </Router>
     );
