@@ -8,6 +8,6 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById("tudo")
+  document.getElementById("root")
 );
 serviceWorker.unregister();

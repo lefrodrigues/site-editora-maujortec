@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HashRouter as Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch,  Route } from "react-router-dom";
 import Topo from "./components/Topo";
 import Home from "./components/Home";
 import Frontend from "./components/Frontend";
@@ -31,7 +31,7 @@ class App extends Component {
   }
   render() {
     return (
-      <HashRouter>
+      <Router>
         
         <Topo />
         <Switch>
@@ -76,7 +76,7 @@ class App extends Component {
         </Switch>
         <Rodape />
       
-      </HashRouter>
+      </Router>
     );
   }
 }
